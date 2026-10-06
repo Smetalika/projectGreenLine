@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ScrollView с ограничением - не больше 40% экрана -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/detailTitle"
+                android:fontFamily="@font/styletext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailImage"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/detailsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Не выбрано"
+                android:fontFamily="@font/styletext1"
+                android:textSize="18sp"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="16dp" />
+
+            <android.widget.Button
+                android:id="@+id/showOnMapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:fontFamily="@font/styletext1"
+                style="@style/Widget.App.Button"
+                android:background="@drawable/buttononthefon"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="Показать на карте" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <android.widget.Button
+            android:id="@+id/openWebsiteButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/styletext1"
+            style="@style/Widget.App.Button"
+            android:background="@drawable/buttononthefon"
+            android:layout_marginEnd="8dp"
+            android:text="Перейти на сайт"
+            android:textSize="16sp"
+            android:padding="12dp" />
+
+        <android.widget.Button
+            android:id="@+id/addToPlanButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/styletext1"
+            style="@style/Widget.App.Button"
+            android:background="@drawable/buttononthefon"
+            android:layout_marginStart="8dp"
+            android:text="Добавить в планы"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

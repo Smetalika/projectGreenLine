@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings_icon"
+        android:title="настройка"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_font_size"
+        android:title="Размер шрифта"
+        android:icon="@android:drawable/ic_menu_edit"
+        app:showAsAction="never" />
+
+
+</menu>

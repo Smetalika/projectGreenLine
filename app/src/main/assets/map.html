@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Убираем прокрутку страницы, будет только карта */
+        }
+        /* Контейнер, куда скрипт поместит карту */
+        .ymaps-constructor-map {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+</head>
+<body>
+<!-- Скрипт-конструктор сам создаст div и встроит карну -->
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A776282986bd9d8e505ef06a6f782e0178ed77164eb9d8fa8fe924d6d6305ef2d&amp;width=511&amp;height=402&amp;lang=ru_RU&amp;scroll=true">
+
+</script>
+</body>
+</html>
